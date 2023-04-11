@@ -1,0 +1,17 @@
+.header{
+    background-image: url("https://thumbs.dreamstime.com/z/lunchboxes-different-meals-white-table-healthy-food-delivery-lunchboxes-different-meals-white-table-flat-lay-160387451.jpg");
+    height: 250px;
+}
+.header-title{
+    background-color: #7e0707e6;;
+    color:white;
+    height: 100px;
+}
+.header-title h2{
+    margin: 0;
+    position: absolute;
+    top:50px;
+    transform: translateY(-50%);
+    left:10%;
+    font-size: 1.8rem;
+}
