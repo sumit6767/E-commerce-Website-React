@@ -9,7 +9,7 @@ const AddMeal= (props)=>{
                       {dishName:"Sushi",dishTitle:"Finest Fish Veggies",price:"22.99"},
                       {dishName:"Sushi",dishTitle:"Finest Fish Veggies",price:"22.99"},]
     return(
-        <div className={style.addmeal} style={{opacity:1}}>
+        <div className={style.addmeal}>
             {
                 mealItem.map((meal)=>{
                     return <MealItem key ={Math.random()} dishName={meal.dishName} dishTitle={meal.dishTitle} price={meal.price} />

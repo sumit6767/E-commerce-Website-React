@@ -6,6 +6,9 @@
     background-color: #7e0707e6;;
     color:white;
     height: 100px;
+    position: sticky;;
+    top:0px;
+    z-index: 1;
 }
 .header-title h2{
     margin: 0;
