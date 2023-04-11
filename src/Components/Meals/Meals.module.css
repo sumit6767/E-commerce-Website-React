@@ -1,0 +1,23 @@
+.summary{
+    background-color: rgb(36, 34, 34);
+    width:50%;
+    text-align: center;
+    color:white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 15px black;
+    position: relative;
+    left:0;
+    opacity: 0;
+    bottom:100px;
+    animation: xyz forwards 1.3s ease-out;
+}
+@keyframes xyz {
+    100%{
+        left:25%;
+        opacity: 1;
+    }
+}
+.summary h2{
+    font-size: 1.8rem;
+}

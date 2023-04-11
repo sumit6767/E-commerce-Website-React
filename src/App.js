@@ -1,9 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Meals from "./Components/Meals/MealSummary";
 import Header from "./Components/Layout/Header";
 
 function App() {
   return (
-    <Header />
+    <Fragment>
+      <Header />
+      <main>
+        <Meals />
+      </main>
+    </Fragment>
   );
 }
 
