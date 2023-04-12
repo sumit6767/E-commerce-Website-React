@@ -1,0 +1,19 @@
+.modal{
+    position:fixed;
+    left:50%;
+    transform: translateX(-50%);
+    top:150px;
+    z-index: 20;
+    background-color: white;
+    padding: 15px;
+    width:50%;
+    border-radius:10px;
+}
+.back{
+    background-color: rgba(0, 0, 0, 0.536);
+    z-index:18;
+    width:100%;
+    position: fixed;
+    height: 100%;
+}
+

@@ -30,7 +30,9 @@
     background-color: aqua;
 }
 .button{
-    width:100%;
+    width:50%;
+    position: relative;
+    left: 25%;
     outline: none;
     cursor: pointer;
     border:none;
@@ -39,6 +41,7 @@
     margin-top: 10px;
     background-color: darkred;
     font-weight: bolder;
+    font-size:1rem;
     border-radius: 10px;
 }
 .summary{

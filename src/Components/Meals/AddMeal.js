@@ -12,7 +12,7 @@ const AddMeal= (props)=>{
         <div className={style.addmeal}>
             {
                 mealItem.map((meal)=>{
-                    return <MealItem key ={Math.random()} dishName={meal.dishName} dishTitle={meal.dishTitle} price={meal.price} />
+                    return <MealItem  key ={Math.random()} dishName={meal.dishName} dishTitle={meal.dishTitle} price={meal.price} />
                 })
             }
 

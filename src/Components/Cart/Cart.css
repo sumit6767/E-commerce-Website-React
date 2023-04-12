@@ -16,6 +16,46 @@
     transition: all 0.5s ease-out;
     animation: xyz forwards 1.3s ease-out;
 }
+.list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.description{
+margin: 10px 0px;
+font-size: 1.3rem;
+font-weight:900;
+display: flex;
+justify-content: space-between;
+}
+.action{
+    float: right;
+}
+.action .close{
+    margin-right:10px;
+    padding: 10px;
+    border:2px solid darkred;
+    color:darkred;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: 900;
+    width:100px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-out ;
+}
+.action .order{
+    padding: 10px;
+    border:none;
+    color:white;
+    background-color: darkred;
+    border-radius: 20px;
+    font-weight: 900;
+    width:100px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-out ; 
+}
 
 @keyframes xyz {
     50%{

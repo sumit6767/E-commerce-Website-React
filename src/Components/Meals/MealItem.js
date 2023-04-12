@@ -20,7 +20,8 @@ const MealItem = (props)=>{
             <p style={{fontStyle:"italic"}}>{props.dishTitle}</p>
             <p style={{fontWeight:"bolder",color:"darkred"}}>&#x20B9;{props.price}</p>
             <form onSubmit={submitHandler} className={style.amountCount}>
-                <span>Amount</span><input type="number"  className={style.box}  value={count}/> 
+                <label htmlFor="count">Amount</label>
+                <input type="number" className={style.box}  value={count}/> 
                 <Button className={style.button}>+ Add</Button>
             </form>
         </div>

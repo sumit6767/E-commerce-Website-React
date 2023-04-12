@@ -5,9 +5,11 @@ import Cart from '../Cart/Cart';
 function Header(props){
     return(
         <div className='header'>
+            <div className='fixedBack'>
             <div className='header-title'>
                 <h2>React Meals</h2>
                 <Cart />
+            </div>
             </div>
         </div>
     )
