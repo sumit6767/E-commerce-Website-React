@@ -1,20 +1,17 @@
-import React, { useEffect ,useState} from "react";
+import React, { useContext } from "react";
 import './Cart.css'
+import { Auth } from "../Auth/Auth";
 
 const Cart = (props)=>{
-    const [counter,setCounter] = useState(0);
-    // useEffect(()=>{
-    //     setTimeout(()=>{
-    //         setCounter((preState)=>{
-    //         return preState+1;
-    //     })},1000)
-    // },[counter]
-    // )
+    const ctx = useContext(Auth);
+    const noOfItems = ctx.items.reduce((prevNum,item)=>{
+        return prevNum+ +item.amount;
+    },0)
     return(
         <div className="cart" onClick={props.onShow}>
             <span> <i className='fas fa-cart-plus'></i> </span>
             <span className="text">Your Carts</span>
-            <span className="count">{counter}</span>
+            <span className="count">{noOfItems}</span>
         </div>
     )
 }

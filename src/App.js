@@ -5,22 +5,22 @@ import CartCheck from "./Components/Cart/CartCheck";
 
 function App() {
   const [showCart,setShowCart] = useState(false);
+
   function showHandler(){
     setShowCart(true)
   }
   function closeHandler(){
     setShowCart(false);
   }
+
   return (
-    <Fragment>
+     <>
       {
-      showCart ? <CartCheck onClose={closeHandler}/> :
-      <>
+      showCart ? <CartCheck onClose={closeHandler}/> :null
+      }
       <Header onShow={showHandler} />
       <Meals />
       </>
-      }
-    </Fragment>
   );
 }
 
