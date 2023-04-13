@@ -11,7 +11,7 @@ const Cart = (props)=>{
     // },[counter]
     // )
     return(
-        <div className="cart">
+        <div className="cart" onClick={props.onShow}>
             <span> <i className='fas fa-cart-plus'></i> </span>
             <span className="text">Your Carts</span>
             <span className="count">{counter}</span>

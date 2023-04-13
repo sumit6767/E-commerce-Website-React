@@ -18,7 +18,7 @@ function CartCheck(props){
                 <span>35.62</span>
             </div>
             <div className="action">
-                <button className="close">Close</button>
+                <button className="close" onClick={props.onClose}>Close</button>
                 <button className="order">Order</button>
             </div>
         </Modal>

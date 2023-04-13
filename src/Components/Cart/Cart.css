@@ -13,9 +13,13 @@
     right: 7%;
     top: 26px;
     cursor: pointer;
-    transition: all 0.5s ease-out;
-    animation: xyz forwards 1.3s ease-out;
+    transition: all 0.2s ease-out;
+    animation: xyz  1 1.3s ease-out;
 }
+.cart:hover{
+    transform: scale(1.2);
+}
+
 .list{
     list-style-type: none;
     margin: 0;
@@ -43,6 +47,10 @@ justify-content: space-between;
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease-out ;
+}
+.close:hover{
+    color:white;
+    background-color: darkred;
 }
 .action .order{
     padding: 10px;

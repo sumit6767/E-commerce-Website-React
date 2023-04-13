@@ -8,7 +8,7 @@ function Header(props){
             <div className='fixedBack'>
             <div className='header-title'>
                 <h2>React Meals</h2>
-                <Cart />
+                <Cart onShow={props.onShow} />
             </div>
             </div>
         </div>
