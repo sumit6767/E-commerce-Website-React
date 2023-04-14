@@ -12,6 +12,9 @@
     display: flex;
     justify-content: space-between;
 }
+.item+p{
+    margin: 0;
+}
 .amountCount{
     position: relative;
     left: 0;

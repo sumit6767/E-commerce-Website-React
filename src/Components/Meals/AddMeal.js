@@ -11,8 +11,9 @@ const AddMeal= (props)=>{
     return(
         <div className={style.addmeal}>
             {
-                mealItem.map((meal)=>{
-                    return <MealItem  key ={Math.random()} dishName={meal.dishName} dishTitle={meal.dishTitle} price={meal.price} />
+                mealItem.map((meal,value)=>{
+                    console.log(value)
+                    return <MealItem id={value} key ={Math.random()} dishName={meal.dishName} dishTitle={meal.dishTitle} price={meal.price} />
                 })
             }
 
