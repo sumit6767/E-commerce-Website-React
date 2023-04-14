@@ -3,11 +3,11 @@ import MealItem from "./MealItem";
 import style from './Meals.module.css'
 
 const AddMeal= (props)=>{
-    const mealItem = [{dishName:"Sushi",dishTitle:"Finest Fish Veggies",price:"22.99"},
-                      {dishName:"Sushi",dishTitle:"Finest Fish Veggies",price:"22.99"},
-                      {dishName:"Sushi",dishTitle:"Finest Fish Veggies",price:"22.99"},
-                      {dishName:"Sushi",dishTitle:"Finest Fish Veggies",price:"22.99"},
-                      {dishName:"Sushi",dishTitle:"Finest Fish Veggies",price:"22.99"},]
+    const mealItem = [{dishName:"Sushi",dishTitle:"Finest Fish Veggies",price:100},
+                      {dishName:"Schnitzel",dishTitle:"A german speciality!",price:200},
+                      {dishName:"Barbecue Burger",dishTitle:"American, raw,meaty",price:300},
+                      {dishName:"Green Bowl",dishTitle:"Finest Fish Veggies",price:400},
+                      {dishName:"Sushi",dishTitle:"Finest Fish Veggies",price:500},]
     return(
         <div className={style.addmeal}>
             {

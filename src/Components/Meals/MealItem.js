@@ -11,13 +11,15 @@ const MealItem = (props)=>{
     }
     function submitHandler(e){
         e.preventDefault()
-        ctx.addItemHandler({...props,amount:amount})
+        ctx.addItemHandler({...props,amount:+amount})
     }
      return(<>
                             <div className={style.item}>
+                               <div>
                                <p>{props.dishName}</p>
                                <p style={{fontStyle:"italic"}}>{props.dishTitle}</p>
                                <p style={{fontWeight:"bolder",color:"darkred"}}>&#x20B9;{props.price}</p>
+                               </div>
                                <form onSubmit={submitHandler} className={style.amountCount}>
                                    <label htmlFor="count">Amount</label>
                                    <input type="number" className={style.box} onChange={changeAmount}  value={amount}/> 

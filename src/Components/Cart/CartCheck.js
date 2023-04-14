@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import Modal from "../UI/Modal";
 import './Cart.css'
+import { Auth } from "../Auth/Auth";
 
 function CartCheck(props){
-    const CartItem = <ul className="list">{
-        [{id:"1",name:"Sushi",amount:"2",price:12.99}].map(item=>{
-            return<li>{item.name}</li>;
+    const ctx = useContext(Auth)
+    const cartItems = ctx.items
+    console.log(cartItems)
+    const CartItem = <ul>{
+        cartItems.map(item=>{
+            return<li className="list" key={Math.random()}><span>{item.dishName}</span> <span>&#x20B9;{item.price} x <span className="quantity">{item.amount}</span> = &#x20B9;{item.price*item.amount}</span></li>;
         })
     }
     </ul>
@@ -15,7 +19,7 @@ function CartCheck(props){
             {CartItem}
             <div className="description">
                 <span>Total amount</span>
-                <span>35.62</span>
+                <span>&#x20B9;{ctx.totalAmount}</span>
             </div>
             <div className="action">
                 <button className="close" onClick={props.onClose}>Close</button>
